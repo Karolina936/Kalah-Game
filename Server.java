@@ -60,8 +60,7 @@ public class Server {
     public void startGame() {
         initializeGame();
         int player = PLAYER1;
-        boolean cont = true;
-        while (!board.isGameFinished() && cont) {
+        while (!board.isGameFinished()) {
             if (player == PLAYER1) System.out.println(board.showBoard1());
             else System.out.println(board.showBoard2());
             System.out.println("Gracz nr: " + player);
